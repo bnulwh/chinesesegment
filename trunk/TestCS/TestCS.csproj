@@ -4,11 +4,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FC554775-D554-4843-8FDE-62CB61A20CF2}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{F8B2DC15-F5C3-42AD-8EC8-6D3E83067703}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lwh.ChineseSegment</RootNamespace>
-    <AssemblyName>Lwh.ChineseSegment</AssemblyName>
+    <RootNamespace>TestCS</RootNamespace>
+    <AssemblyName>TestCS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,33 +33,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DictionaryLoader\BinDictionaryLoader.cs" />
-    <Compile Include="DictionaryLoader\DictionaryLoaderFactory.cs" />
-    <Compile Include="DictionaryLoader\IDictionaryLoader.cs" />
-    <Compile Include="DictionaryLoader\TextDictionaryLoader.cs" />
-    <Compile Include="DictionaryLoader\XmlDictionaryLoader.cs" />
-    <Compile Include="DictionaryWriter\BinDictionaryWriter.cs" />
-    <Compile Include="DictionaryWriter\DictionaryWriterFactory.cs" />
-    <Compile Include="DictionaryWriter\IDictionaryWriter.cs" />
-    <Compile Include="DictionaryWriter\TextDictionaryWriter.cs" />
-    <Compile Include="DictionaryWriter\XmlDictionaryWriter.cs" />
-    <Compile Include="ForwardMatchSegment.cs" />
-    <Compile Include="IWordSegment.cs" />
-    <Compile Include="Segment.cs" />
-    <Compile Include="SegmentDictionary\BackSegmentDictionary.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SegmentDictionary\ForwardSegmentDictionary.cs" />
-    <Compile Include="SegmentDictionary\ISegmentDictionary.cs" />
-    <Compile Include="SegmentDictionary\SegmentDictionaryBase.cs" />
-    <Compile Include="Utility\Character.cs" />
-    <Compile Include="Utility\Serialization.cs" />
-    <Compile Include="Utility\StrUtility.cs" />
-    <Compile Include="Utility\Validator.cs" />
-    <Compile Include="WordSegmentBase.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

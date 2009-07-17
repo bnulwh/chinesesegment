@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lwh.ChineseSegment.SegmentDictionary
+namespace ISUtils.CSegment.SegmentDictionary
 {
     internal abstract class SegmentDictionaryBase : ISegmentDictionary
     {
@@ -129,7 +129,8 @@ namespace Lwh.ChineseSegment.SegmentDictionary
                 //将分词加入分词列表
                 _baseSegmentList.Add(segment);
                 //将分词加入分词字典
-                _baseSegmentDict.Add(segment, length);
+                if(!_baseSegmentDict.ContainsKey(segment))
+                    _baseSegmentDict.Add(segment, length);
                 Dictionary<string, int> keyValueDict = new Dictionary<string, int>();
                 int maxLen = 0;
                 if (_segmentKeys.ContainsKey(oneChar))
