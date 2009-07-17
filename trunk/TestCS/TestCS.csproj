@@ -36,6 +36,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lwh.ChineseSegment\Lwh.ChineseSegment.csproj">
+      <Project>{FC554775-D554-4843-8FDE-62CB61A20CF2}</Project>
+      <Name>Lwh.ChineseSegment</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

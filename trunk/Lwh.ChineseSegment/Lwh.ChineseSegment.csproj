@@ -52,6 +52,7 @@
     <Compile Include="SegmentDictionary\ForwardSegmentDictionary.cs" />
     <Compile Include="SegmentDictionary\ISegmentDictionary.cs" />
     <Compile Include="SegmentDictionary\SegmentDictionaryBase.cs" />
+    <Compile Include="Utility\AuxiliaryString.cs" />
     <Compile Include="Utility\Character.cs" />
     <Compile Include="Utility\Serialization.cs" />
     <Compile Include="Utility\StrUtility.cs" />
