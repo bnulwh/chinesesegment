@@ -13,17 +13,23 @@ namespace TestCS
         //const string TESTTEXT = "养10000头猪来探索一套科学养猪模式供大家分享";
         static void Main(string[] args)
         {
-            TestSegment();
-            string space = "";
-            space.PadRight(10,' ');
-            Console.WriteLine("#" + space + "#");
-            StringBuilder builder = new StringBuilder();
-            builder.Append(' ', 10);
-            Console.WriteLine("#" + builder.ToString() + "#");
-            AuxiliaryString auxString = new AuxiliaryString();
-            //auxString.Append("/");
-            TestAuxString(auxString);
-            Console.WriteLine(auxString.ToString());
+            //TestSegment();
+            //string space = "";
+            //space.PadRight(10,' ');
+            //Console.WriteLine("#" + space + "#");
+            //StringBuilder builder = new StringBuilder();
+            //builder.Append(' ', 10);
+            //Console.WriteLine("#" + builder.ToString() + "#");
+            //AuxiliaryString auxString = new AuxiliaryString();
+            ////auxString.Append("/");
+            //TestAuxString(auxString);
+            //Console.WriteLine(auxString.ToString());
+            for (int i = 0; i <= 255; i++)
+            {
+                Console.Write(i & 15);
+                Console.Write(" ");
+            }
+            Console.WriteLine();
             Console.ReadKey();
         }
         static void TestAuxString(AuxiliaryString auxString)
